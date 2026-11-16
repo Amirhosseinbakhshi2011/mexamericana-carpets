@@ -1,43 +1,40 @@
 @import "tailwindcss";
 
-:root {
-  /* MexAmericana special palette - vibrant, earthy, bold */
-  --terracotta: #C2410C;
-  --terracotta-light: #EA580C;
-  --turquoise: #0D9488;
-  --turquoise-deep: #0F766E;
-  --gold: #D97706;
-  --gold-light: #F59E0B;
-  --cream: #FEF3C7;
-  --cream-dark: #FDE68A;
-  --navy: #1E3A5F;
-  --navy-deep: #0F2744;
-  --coral: #E11D48;
-  --sand: #FEF9E7;
-  --ink: #1C1917;
-  
-  --background: var(--sand);
-  --foreground: var(--ink);
+@theme {
+  --color-terracotta: #C2410C;
+  --color-terracotta-light: #EA580C;
+  --color-turquoise: #0D9488;
+  --color-turquoise-deep: #0F766E;
+  --color-gold: #D97706;
+  --color-gold-light: #F59E0B;
+  --color-cream: #FEF3C7;
+  --color-cream-dark: #FDE68A;
+  --color-navy: #1E3A5F;
+  --color-navy-deep: #0F2744;
+  --color-coral: #E11D48;
+  --color-sand: #FEF9E7;
+  --color-ink: #1C1917;
+  --color-background: #FEF9E7;
+  --color-foreground: #1C1917;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-playfair), ui-serif, Georgia, serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-terracotta: var(--terracotta);
-  --color-turquoise: var(--turquoise);
-  --color-gold: var(--gold);
-  --color-cream: var(--cream);
-  --color-navy: var(--navy);
-  --color-coral: var(--coral);
-  --color-sand: var(--sand);
-  --font-sans: var(--font-inter);
-  --font-serif: var(--font-playfair);
+:root {
+  --terracotta: #C2410C;
+  --turquoise: #0D9488;
+  --gold: #D97706;
+  --cream: #FEF3C7;
+  --navy: #1E3A5F;
+  --coral: #E11D48;
+  --sand: #FEF9E7;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-sans), system-ui, sans-serif;
+  background-color: var(--color-sand);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
 }
 
 /* Geometric rug pattern background */
@@ -51,7 +48,7 @@ body {
     linear-gradient(60deg, var(--gold) 25%, transparent 25.5%, transparent 75%, var(--gold) 75%, var(--gold));
   background-size: 80px 140px;
   background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
-  opacity: 0.08;
+  opacity: 0.07;
 }
 
 .mexican-stripe {
