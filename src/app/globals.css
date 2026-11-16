@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+:root {
+  /* MexAmericana special palette - vibrant, earthy, bold */
+  --terracotta: #C2410C;
+  --terracotta-light: #EA580C;
+  --turquoise: #0D9488;
+  --turquoise-deep: #0F766E;
+  --gold: #D97706;
+  --gold-light: #F59E0B;
+  --cream: #FEF3C7;
+  --cream-dark: #FDE68A;
+  --navy: #1E3A5F;
+  --navy-deep: #0F2744;
+  --coral: #E11D48;
+  --sand: #FEF9E7;
+  --ink: #1C1917;
+  
+  --background: var(--sand);
+  --foreground: var(--ink);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-terracotta: var(--terracotta);
+  --color-turquoise: var(--turquoise);
+  --color-gold: var(--gold);
+  --color-cream: var(--cream);
+  --color-navy: var(--navy);
+  --color-coral: var(--coral);
+  --color-sand: var(--sand);
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-playfair);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+/* Geometric rug pattern background */
+.rug-pattern {
+  background-image: 
+    linear-gradient(30deg, var(--terracotta) 12%, transparent 12.5%, transparent 87%, var(--terracotta) 87.5%, var(--terracotta)),
+    linear-gradient(150deg, var(--terracotta) 12%, transparent 12.5%, transparent 87%, var(--terracotta) 87.5%, var(--terracotta)),
+    linear-gradient(30deg, var(--terracotta) 12%, transparent 12.5%, transparent 87%, var(--terracotta) 87.5%, var(--terracotta)),
+    linear-gradient(150deg, var(--terracotta) 12%, transparent 12.5%, transparent 87%, var(--terracotta) 87.5%, var(--terracotta)),
+    linear-gradient(60deg, var(--gold) 25%, transparent 25.5%, transparent 75%, var(--gold) 75%, var(--gold)),
+    linear-gradient(60deg, var(--gold) 25%, transparent 25.5%, transparent 75%, var(--gold) 75%, var(--gold));
+  background-size: 80px 140px;
+  background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+  opacity: 0.08;
+}
+
+.mexican-stripe {
+  background: repeating-linear-gradient(
+    90deg,
+    var(--terracotta),
+    var(--terracotta) 20px,
+    var(--gold) 20px,
+    var(--gold) 40px,
+    var(--turquoise) 40px,
+    var(--turquoise) 60px,
+    var(--coral) 60px,
+    var(--coral) 80px,
+    var(--navy) 80px,
+    var(--navy) 100px
+  );
+}
+
+.carpet-card {
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+}
+
+.carpet-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 25px 50px -12px rgba(194, 65, 12, 0.25);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--sand);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(var(--terracotta), var(--gold));
+  border-radius: 5px;
+}
