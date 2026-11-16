@@ -2,73 +2,65 @@
 
 > **Weaving Two Americas Together**
 
-A stunning, production-ready Next.js 15 showcase website for handcrafted Mexican-American inspired carpets and rugs.
+A complete multi-page Next.js 15 website for handcrafted Mexican-American inspired carpets and rugs. Real cultural references, rich product stories, and a special vibrant color system.
 
-![MexAmericana](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js)
-![Tailwind](https://img.shields.io/badge/Tailwind_CSS-4-38BDF8?style=for-the-badge&logo=tailwind-css)
-![Framer Motion](https://img.shields.io/badge/Framer_Motion-11-0055FF?style=for-the-badge)
+**Live Repo:** https://github.com/Amirhosseinbakhshi2011/mexamericana-carpets
 
-## ✨ Features
+## Pages
 
-- **Special Color Palette** — Terracotta, Turquoise, Gold, Coral, Navy & Cream (inspired by desert sunsets, Talavera tiles, adobe & turquoise jewelry)
-- **Geometric Patterns** — CSS-powered Mexican/Southwestern motifs and serape stripes
-- **Smooth Animations** — Framer Motion page reveals, hover effects and staggered cards
-- **Responsive Design** — Looks premium on mobile, tablet and desktop
-- **Cultural Storytelling** — Borderland narrative between Mexican tradition and American Southwest
-- **Modern Stack** — Next.js 15 (App Router) + Tailwind CSS 4 + TypeScript
+| Route | Description |
+|-------|-------------|
+| `/` | Home — hero, featured pieces, story teaser, CTA |
+| `/collection` | Full gallery of all 8 carpets |
+| `/collection/[slug]` | Detailed product page with story, materials, features |
+| `/story` | Cultural history (Saltillo, Chimayo, Navajo, Otomi, Aztec) |
+| `/contact` | Contact form + commission process |
 
-## 🎨 The Palette
+## ✨ Highlights
 
-| Color       | Hex       | Inspiration          |
-|-------------|-----------|----------------------|
-| Terracotta  | `#C2410C` | Adobe & clay         |
-| Turquoise   | `#0D9488` | Sky & stone          |
-| Gold        | `#D97706` | Desert sun           |
-| Coral       | `#E11D48` | Mexican rose         |
-| Navy        | `#1E3A5F` | Night canyon         |
-| Cream       | `#FEF3C7` | Sand & bone          |
+- **Authentic inspiration**: Saltillo serapes, Chimayo weaving, Navajo geometry, Otomi florals, pre-Hispanic motifs
+- **Special color palette**: Terracotta · Turquoise · Gold · Coral · Navy · Cream
+- **Smooth animations** with Framer Motion
+- **Geometric CSS patterns** and serape stripes
+- **Fully responsive** and production-ready structure
+- **TypeScript** + App Router
 
-## 🚀 Getting Started
+## 🎨 Palette
+
+| Color       | Hex       | Inspiration     |
+|-------------|-----------|-----------------|
+| Terracotta  | `#C2410C` | Adobe & clay    |
+| Turquoise   | `#0D9488` | Sky & stone     |
+| Gold        | `#D97706` | Desert sun      |
+| Coral       | `#E11D48` | Mexican rose    |
+| Navy        | `#1E3A5F` | Night canyon    |
+| Cream       | `#FEF3C7` | Sand & bone     |
+
+## 🚀 Run Locally
 
 ```bash
-# Clone
 git clone https://github.com/Amirhosseinbakhshi2011/mexamericana-carpets.git
 cd mexamericana-carpets
-
-# Install
 npm install
-
-# Run
 npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000)
 
-## 🛠 Tech Stack
+## Tech Stack
 
-- **Framework**: Next.js 15 (App Router)
-- **Styling**: Tailwind CSS 4
-- **Animation**: Framer Motion
-- **Icons**: Lucide React
-- **Fonts**: Inter + Playfair Display
-- **Language**: TypeScript
+- Next.js 15 (App Router)
+- Tailwind CSS 4
+- Framer Motion
+- Lucide React
+- TypeScript
+- Inter + Playfair Display
 
-## 📁 Project Structure
-
-```
-src/
-└── app/
-    ├── globals.css      # Special palette + patterns
-    ├── layout.tsx       # Fonts & metadata
-    └── page.tsx         # Full landing page
-```
-
-## 👨‍💻 Author
+## Author
 
 **Amirhossein Bakhshi**  
-16yo Full-Stack Developer · Math Lover · Dreaming of the USA  
-Next.js · React · Laravel · Currently learning Machine Learning
+16 · Full-Stack · Next.js / React / Laravel · Learning ML · Dreaming of the USA
 
 ---
 
-Made with ❤️ and a lot of color
+Made with color, craft, and respect for the borderland traditions.
