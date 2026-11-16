@@ -25,7 +25,9 @@ export default function Navbar() {
 
       <div className="hidden items-center gap-8 text-sm font-medium text-navy/80 md:flex">
         {links.map((link) => {
-          const isActive = pathname === link.href || (link.href !== "/" && pathname.startsWith(link.href));
+          const isActive =
+            pathname === link.href ||
+            (link.href !== "/" && pathname.startsWith(link.href));
           return (
             <Link
               key={link.href}
@@ -46,20 +48,23 @@ export default function Navbar() {
         })}
         <Link
           href="/contact"
-          className="rounded-full bg-terracotta px-5 py-2.5 text-white shadow-lg shadow-terracotta/30 hover:bg-orange-600 transition-all"
+          className="rounded-full bg-terracotta px-5 py-2.5 text-white shadow-lg shadow-terracotta/30 transition-all hover:bg-terracotta-light"
         >
           Commission
         </Link>
       </div>
 
-      {/* Mobile simple links */}
+      {/* Mobile */}
       <div className="flex items-center gap-4 md:hidden">
-        <Link href="/collection" className="text-sm font-medium text-navy">
+        <Link
+          href="/collection"
+          className="text-sm font-medium text-navy hover:text-terracotta"
+        >
           Collection
         </Link>
         <Link
           href="/contact"
-          className="rounded-full bg-terracotta px-4 py-2 text-sm text-white"
+          className="rounded-full bg-terracotta px-4 py-2 text-sm font-medium text-white"
         >
           Contact
         </Link>
